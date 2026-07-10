@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby Bookstores</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <br><br>
+        <h1 class="text-center">Find Nearby Places</h1>
+        <div class="form-class">
+            <label for="location">Enter Your Location:</label>
+            <br><br>
+            <input type="text" class="form-control" id="autocomplete" placeholder="Enter location here">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="type">Search for:</label>
+            <br>
+            <select class="form-control" id="type">
+                <option value="library">choose option</option>
+                <option value="book_store">Book Store</option>
+                <option value="cafe">Temple</option>
+                <option value="gym">Gym</option>
+                <option value="atm">ATM</option>
+            </select>
+        </div>
+        <br><br>
+        <h3 class="text-center">Results</h3>
+        <div id="map" style="height: 400px; width: 100%;"></div>
+        <br>
+        <table class="table table-bordered table-striped" id="places">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="/maps/accurateescript.js" defer></script>
+    <script
+        src="https://maps.gomaps.pro/maps/api/js?key=AlzaSyr4cBnFSQ-MJHaJIjG9rz6Aqf8O8EAhVFH&libraries=places&callback=initMap"
+        async defer></script>
+</body>
+
+</html>
