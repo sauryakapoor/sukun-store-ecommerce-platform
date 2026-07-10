@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <link rel="shortcut icon" href="/logoicon.png" type="image/svg+xml">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            max-width: 90%;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 5%;
+            background-color: #969eab;
+            flex-wrap: wrap;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-left img {
+            height: 40px;
+        }
+
+        .search {
+            position: relative;
+            flex-grow: 1;
+            max-width: 400px;
+        }
+
+        .search input {
+            width: 100%;
+            margin-left: 30px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            color: rgb(246, 246, 252);
+            background-color: rgb(21, 20, 20);
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        .container {
+            max-width: 90%;
+            
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #47484a;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .payment-options {
+            padding: 20px;
+        }
+
+        .payment-option {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .payment-option:hover {
+            background-color: #f0f0f0;
+        }
+
+        .payment-option input {
+            margin-right: 10px;
+        }
+
+        .details {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+
+        .btn {
+            display: none;
+            width: 100%;
+            padding: 15px;
+            background-color: #323334;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #0f71e9;
+        }
+
+        .active .btn {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .nav-left {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .search {
+                flex-grow: 1;
+                width: 100%;
+            }
+
+            .container {
+                max-width: 100%;
+                margin: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.2em;
+            }
+
+            .btn {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="LOGO.png" width="auto" height="40" title="sukun" alt="sukun">
+            <!-- <div class="search">
+                <input type="search" placeholder="Search for products, materials and more...">
+            </div> -->
+        </div>
+        <a href="/index.html"><button>Back to Home</button></a>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="header">
+            <h1>Select Payment Method</h1>
+        </div>
+        <div class="payment-options">
+            <div class="payment-option" onclick="showDetails('net-banking-details')">
+                <input type="radio" name="payment" id="net-banking">
+                <label for="net-banking">Net Banking</label>
+            </div>
+            <div class="details" id="net-banking-details">
+                <p>Select your bank and proceed to pay.</p>
+                <a href="/Sukunpayemntoption/upi/index.html"><button class="btn">Proceed to Pay</button></a>
+            </div>
+
+            <div class="payment-option" onclick="showDetails('upi-details')">
+                <input type="radio" name="payment" id="upi">
+                <label for="upi">UPI</label>
+            </div>
+            <div class="details" id="upi-details">
+                <p>Enter your UPI ID to pay.</p>
+                <a href="/Sukunpayemntoption/upi/index.html"><button class="btn">Proceed to Pay</button></a>
+            </div>
+
+            <div class="payment-option" onclick="showDetails('card-details')">
+                <input type="radio" name="payment" id="card">
+                <label for="card">Debit/Credit Card</label>
+            </div>
+            <div class="details" id="card-details">
+                <p>Enter your card details to pay.</p>
+                <a href="/Sukunpayemntoption/success-netbanking/paymentPage.html"><button class="btn">Proceed to Pay</button></a>
+            </div>
+
+            <!-- <div class="payment-option" onclick="showDetails('cod-details')">
+                <input type="radio" name="payment" id="cod">
+                <label for="cod">Cash on Delivery</label>
+            </div>
+            <div class="details" id="cod-details">
+                <p>You can pay in cash upon delivery.</p>
+                <button class="btn">Proceed to Pay</button>
+            </div> -->
+
+            <div class="payment-option" onclick="showDetails('linkpay-details')">
+                <input type="radio" name="payment" id="linkpay">
+                <label for="linkpay">LinkPe Pay</label>
+            </div>
+            <div class="details" id="linkpay-details">
+                <p>Pay securely using LinkpePay.</p>
+                <a href="/Sukunpayemntoption/linkpe-sukunpayment/linkpe.html"><button class="btn">Proceed to Pay</button></a>
+            </div>
+
+            <div class="payment-option" onclick="showDetails('paytm-details')">
+                <input type="radio" name="payment" id="paytm">
+                <label for="paytm">ON Paytm (QR)</label>
+            </div>
+            <div class="details" id="paytm-details">
+                <p>Pay using your Paytm wallet.</p>
+                <a href="/Sukunpayemntoption/payusingQR.html"><button class="btn">Proceed to Pay</button></a>
+            </div>
+
+            <div class="payment-option" onclick="showDetails('visa-details')">
+                <input type="radio" name="payment" id="visa">
+                <label for="visa">Visa</label>
+            </div>
+            <div class="details" id="visa-details">
+                <p>Pay with your Visa card.</p>
+                <a href="/Sukunpayemntoption/payment/index.html"><button class="btn">Proceed to Pay</button></a>
+            </div>
+
+            <!-- <div class="payment-option" onclick="showDetails('phonepe-details')">
+                <input type="radio" name="payment" id="phonepe">
+                <label for="phonepe">PhonePe</label>
+            </div>
+            <div class="details" id="phonepe-details">
+                <p>Pay using your PhonePe account.</p>
+                <button class="btn">Proceed to Pay</button>
+            </div> -->
+
+            <!-- <div class="payment-option" onclick="showDetails('googlepay-details')">
+                <input type="radio" name="payment" id="googlepay">
+                <label for="googlepay">Google Pay</label>
+            </div>
+            <div class="details" id="googlepay-details">
+                <p>Pay using Google Pay.</p>
+                <button class="btn">Proceed to Pay</button>
+            </div> -->
+            <div class="payment-option" onclick="showDetails('cod-details')">
+                <input type="radio" name="payment" id="cod">
+                <label for="cod">Cash on Delivery</label>
+            </div>
+            <div class="details" id="cod-details">
+                <p>You can pay in cash upon delivery.</p>
+                <a href="/Sukunpayemntoption/cashondelivery.html"><button class="btn">Proceed to Pay</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showDetails(id) {
+            const details = document.querySelectorAll('.details');
+            const options = document.querySelectorAll('.payment-option');
+
+            details.forEach(detail => {
+                detail.style.display = 'none';
+            });
+
+            options.forEach(option => {
+                option.classList.remove('active');
+            });
+
+            const selectedDetail = document.getElementById(id);
+            if (selectedDetail) {
+                selectedDetail.style.display = 'block';
+                selectedDetail.parentElement.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
