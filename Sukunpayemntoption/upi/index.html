@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Payment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Form</h1>
+        <div class="payment-methods">
+            <button id="debit-card-btn" class="payment-btn active">Debit Card</button>
+            <button id="credit-card-btn" class="payment-btn">Credit Card</button>
+            <button id="upi-btn" class="payment-btn">UPI</button>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-front">
+                    <div class="card-details">
+                        <div id="card-number-display">#### #### #### ####</div>
+                        <div id="card-holder-display">Your Name</div>
+                        <div id="expiry-date-display">MM/YY</div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div id="cvv-display">###</div>
+                </div>
+            </div>
+        </div>
+
+        <form id="payment-form">
+            <div id="card-info">
+                <div class="input-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" placeholder="1234 5678 9123 4567">
+                </div>
+                <div class="input-group">
+                    <label for="card-holder">Card Holder</label>
+                    <input type="text" id="card-holder" placeholder="John Doe">
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="text" id="expiry-date" placeholder="MM/YY">
+                    </div>
+                    <div class="input-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123">
+                    </div>
+                </div>
+            </div>
+
+            <div id="upi-info" class="hidden">
+                <div class="input-group">
+                    <label for="upi-id">UPI ID</label>
+                    <input type="text" id="upi-id" placeholder="yourname@bank">
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Pay Now</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
