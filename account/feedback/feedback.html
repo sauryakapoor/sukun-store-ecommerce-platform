@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #444;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea, select, button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .rating-container {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+        .rating-container input {
+            display: none;
+        }
+        .rating-container label {
+            font-size: 30px;
+            cursor: pointer;
+            color: #ccc;
+            transition: color 0.3s;
+        }
+        .rating-container input:checked ~ label,
+        .rating-container input:hover ~ label {
+            color: #ffc107;
+        }
+        button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .success-message, .error-message {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .success-message {
+            color: #28a745;
+        }
+        .error-message {
+            color: #dc3545;
+        }
+
+        * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: #f1f3f6;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 5%;
+    background-color: #969eab;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+input {
+    width: 40vw;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    width: 150px;
+    color: rgb(246, 246, 252);
+    background-color: rgb(21, 20, 20);
+    font-weight: 600;
+    border: none;
+}
+
+.search {
+    position: relative;
+}
+
+i {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    color: rgb(75, 75, 255);
+    height: 100%;
+    width: 30px;
+
+}
+.cartItmPMBtn {
+    width: 50px;
+    border: 2px solid #6083b7;
+    border-radius: 50%;
+}
+.cartItmListInviewCart .cartItmSfLRmBtn:hover{
+    cursor: pointer;
+}
+/* for popup remove and confermation */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .popup.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .popup.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin-top: 100px;
+    font-size: 14px;
+    color: grey;
+    position: relative;
+}
+
+footer::before {
+    position: absolute;
+    height: 2px;
+    background-color: grey;
+    content: '';
+    top: -35px;
+    width: 100%;
+    left: 0;
+}
+
+footer span {
+    color: rgb(75, 75, 255);
+}
+
+.empty-cart {
+    margin: 25px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    background-color: white;
+    gap: 25px;
+
+}
+
+.empty-cart h4 {
+    font-size: 18px;
+}
+
+.empty-cart button {
+    background-color: rgb(6, 5, 5);
+    color: white;
+}
+
+
+
+/* card items  */
+#cardInProduct .container- {
+    margin: 5px 2vw;
+}
+
+#itemsInCart {
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+#itemsInCart .itemDetail,
+.deliveryDate {
+    font-size: small;
+}
+
+#itemsInCart .itemDetail {
+    width: 60%;
+}
+
+#cardInProduct .placeOrder {
+    background: #dd5a19;
+    width: max-content;
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+
+#itemsInCart p {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+@media screen and (max-width : 1070px) {
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width : 890px) {
+    footer {
+        font-size: 11px;
+        padding: 0 5px;
+    }
+
+    input {
+        width: 40vw;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    nav button {
+        padding: 5px;
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .nav-left {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width : 670px) {
+    nav img {
+        height: 20px;
+    }
+
+    input,
+    nav button {
+        font-size: 8px;
+    }
+
+}
+    </style>
+</head>
+<body>
+    
+    <nav>   
+        <div class="nav-left">
+           
+                <img src="/assets/images/LOGO.png" width=auto height="40" title="Flipkart" alt="Flipkart" />
+            </a>
+
+            <div class="search">
+                <input type="search" placeholder="Search for products, materials and more...">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </div>
+        <a href="/index.html"><button>Back to Home</button></a>
+
+    </nav>
+
+    <div class="container">
+        <h1>Give Your Feedback</h1>
+        <form id="feedbackForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="purchase">Did you make a purchase?</label>
+            <select id="purchase" name="purchase" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="experience">Rate your overall experience</label>
+            <div class="rating-container">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">&#9733;</label>
+            </div>
+
+            <label for="recommend">Would you recommend us to others?</label>
+            <select id="recommend" name="recommend" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="Maybe">Maybe</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="feedback">Additional Feedback</label>
+            <textarea id="feedback" name="feedback" placeholder="Your Feedback" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div class="success-message" id="successMessage" style="display: none;">
+            Feedback sent successfully! Thank you.
+        </div>
+        <div class="error-message" id="errorMessage" style="display: none;">
+            Something went wrong. Please try again.
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("YOUR_EMAILJS_USER_ID");
+        })();
+
+        document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const purchase = document.getElementById("purchase").value;
+            const rating = document.querySelector('input[name="rating"]:checked')?.value || "No rating provided";
+            const recommend = document.getElementById("recommend").value;
+            const feedback = document.getElementById("feedback").value;
+
+            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+                name: name,
+                email: email,
+                purchase: purchase,
+                rating: rating,
+                recommend: recommend,
+                feedback: feedback
+            }).then(function(response) {
+                document.getElementById("successMessage").style.display = "block";
+                document.getElementById("errorMessage").style.display = "none";
+                document.getElementById("feedbackForm").reset();
+            }, function(error) {
+                document.getElementById("successMessage").style.display = "none";
+                document.getElementById("errorMessage").style.display = "block";
+            });
+        });
+    </script>
+</body>
+</html>
