@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Donation & Sale</title>
+    <link rel="stylesheet" href="/books-donationorsell/books-donation.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Book Donation & Sale</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#donate-or-sell">Donate or Sell</a></li>
+                    <li><a href="/contactus.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Share Knowledge, Empower Others</h2>
+            <p>Donate or sell your books to help build a community of learning.</p>
+            <a href="#donate-or-sell" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We provide a platform for book lovers to donate books for free or sell them at affordable prices to promote education and literacy.</p>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>1. Choose an Option</h3>
+                    <p>Decide whether you want to donate or sell your books.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Fill the Form</h3>
+                    <p>Provide details about the books and your contact information.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Get Connected</h3>
+                    <p>We’ll connect with you to arrange the next steps.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donate-or-sell">
+            <div class="container">
+                <h1 align="center">Donate / Sell Form</h1>
+                <form target="_blank" action="https://formsubmit.co/sauryakapoor1@gmail.com" method="POST">
+                  <!-- <div class="form-group">
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                      </div>
+                      <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                  </div> -->
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" required>
+  
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+  
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" required>
+  
+                  <label for="address">Address</label>
+                  <textarea id="address" name="address" required></textarea>
+  
+                  <label for="address">Book name</label>
+                  <textarea id="booksname" name="booksname" required></textarea>
+  
+                  <label for="books">Books Details</label>
+                  <textarea id="books" name="books" placeholder="E.g., 5 storybooks, 3 textbooks" required></textarea>
+  
+                  <label for="action">Action</label>
+                  <select id="action" name="action" required>
+                      <option value="" disabled selected>Select an option</option>
+                      <option value="donate">Donate</option>
+                      <option value="sell">Sell</option>
+                  </select>
+                  
+                  <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                </form>
+              </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Book Donation & Sale | All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script src="/books-donationorsell/books-donation.js"></script>
+</body>
+</html>
