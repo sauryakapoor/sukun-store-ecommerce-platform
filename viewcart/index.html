@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | Sukun Store</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>Sukun Store - Cart</h1>
+    </div>
+  </header>
+  <main>
+    <!-- Cart Section -->
+    <section class="cart-container">
+      <h2>Your Cart</h2>
+      <div id="cart-items">
+        <!-- Cart items will added by cart --abhi -->
+      </div>
+      <div class="cart-summary">
+        <p>Total Price: ₹<span id="total-price">0</span></p>
+      </div>
+    </section>
+
+    <!-- Billing Section -->
+    <section id="billing-section" style="display: none;" class="billing-container">
+      <h2>Billing Summary</h2>
+      <!-- Billing details dynamically rendered from cart.js -->
+    </section>
+
+ 
+  </main>
+  <footer>
+    <p>  SukunStore | All rights reserved By TeamSukun.</p>
+  </footer>
+  <script src="cart.js"></script>
+</body>
+</html>
