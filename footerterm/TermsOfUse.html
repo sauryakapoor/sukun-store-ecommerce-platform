@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use | Flipkart</title>
+  <link rel="icon" type="image/x-icon" href="/assets/images/LOGO.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f3f6;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    header {
+      background-color: #2874f0;
+      padding: 10px 20px;
+    }
+
+    nav .logo {
+      color: #fff;
+      font-size: 24px;
+      text-decoration: none;
+    }
+
+    #header-bluebg .secondNav a {
+      color: #fff !important;
+    }
+
+    header-bluebg a,
+    #more_h {
+      text-decoration: none !important;
+      color: #f9fafb !important;
+      font-weight: 600 !important;
+    }
+
+    .faq-section {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-section h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .faq-container {
+      margin-top: 20px;
+    }
+
+    .faq {
+      border-bottom: 1px solid #e0e0e0;
+      padding: 15px 0;
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .faq-question h3 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+
+    }
+
+    .faq-toggle {
+      font-size: 24px;
+      color: #2874f0;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-answer p {
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    .navbar-brand img {
+      width: 120px;
+    }
+
+    .searchBar_h {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .searchBar_h input {
+      flex: 1;
+      padding: 5px 10px;
+      border-radius: 5px 0 0 5px;
+      border: 1px solid #ccc;
+    }
+
+    .searchBar_h i {
+      padding: 5px 10px;
+      border-radius: 0 5px 5px 0;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-left: 0;
+      cursor: pointer;
+    }
+
+    .btn-primary a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .b_a_s,
+    #more_h,
+    .cartLogoandname {
+      margin-left: 10px;
+    }
+
+    .cartLogoandname img {
+      width: 20px;
+    }
+
+    .secondNav .nav-link {
+      display: flex;
+      align-items: center;
+      padding: 5px 10px;
+      color: #000;
+    }
+
+    .secondNav .nav-link i {
+      margin-left: 5px;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28155,155,155,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    #more_h {
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      padding: 5px 10px;
+      color: #fff;
+    }
+
+    #more-options {
+      display: none;
+      background-color: white;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      top: 100%;
+      left: 0;
+      min-width: 150px;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 700;
+    }
+
+    #more_h:hover #more-options {
+      display: block;
+    }
+
+    .option-item {
+      color: #f4c3c3;
+      padding: 5px 0;
+      text-decoration: none;
+      display: block;
+      font-size: 13px;
+      transition: all 0.78s;
+    }
+
+    .option-item:hover {
+      text-decoration: none;
+      background-color: #ccc;
+      transition: all 0.78s;
+    }
+
+    /* General Content Styles */
+    .content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      /* White background for content area */
+      border-radius: 8px;
+      /* Rounded corners */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      /* Light shadow */
+    }
+
+    /* Heading Styles */
+    .content h1,
+    .content h2 {
+      color: #333333;
+      /* Dark text for readability */
+      font-family: 'Roboto', sans-serif;
+      /* Consistent font */
+    }
+
+    .content h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .content h2 {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      border-bottom: 2px solid #007bff;
+      /* Blue underline for sections */
+      padding-bottom: 5px;
+    }
+
+    /* Paragraph Styles */
+    .content p {
+      font-size: 1rem;
+      color: #555555;
+      /* Slightly lighter text */
+      line-height: 1.6;
+      /* Improved readability */
+      margin-bottom: 15px;
+    }
+
+    /* List Styles */
+    .content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .content li {
+      margin-bottom: 10px;
+    }
+
+    .content li strong {
+      color: #007bff;
+      /* Blue color for highlighted text */
+    }
+
+    /* Link Styles */
+    .content a {
+      color: #007bff;
+      /* Blue color for links */
+      text-decoration: none;
+    }
+
+    .content a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact Information Styles */
+    .content .contact-info {
+      margin-top: 30px;
+    }
+
+    .content .contact-info p {
+      margin-bottom: 10px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .content {
+        padding: 15px;
+      }
+
+      .content h1 {
+        font-size: 1.75rem;
+      }
+
+      .content h2 {
+        font-size: 1.25rem;
+      }
+
+      .content p {
+        font-size: 0.9rem;
+      }
+    }
+
+    footer {
+      background-color: rgb(6, 23, 46);
+    }
+
+    * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: #f1f3f6;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 5%;
+    background-color: #969eab;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+input {
+    width: 40vw;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    width: 150px;
+    color: rgb(246, 246, 252);
+    background-color: rgb(21, 20, 20);
+    font-weight: 600;
+    border: none;
+}
+
+.search {
+    position: relative;
+}
+
+i {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    color: rgb(75, 75, 255);
+    height: 100%;
+    width: 30px;
+
+}
+.cartItmPMBtn {
+    width: 50px;
+    border: 2px solid #6083b7;
+    border-radius: 50%;
+}
+.cartItmListInviewCart .cartItmSfLRmBtn:hover{
+    cursor: pointer;
+}
+/* for popup remove and confermation */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .popup.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .popup.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin-top: 100px;
+    font-size: 14px;
+    color: grey;
+    position: relative;
+}
+
+footer::before {
+    position: absolute;
+    height: 2px;
+    background-color: grey;
+    content: '';
+    top: -35px;
+    width: 100%;
+    left: 0;
+}
+
+footer span {
+    color: rgb(75, 75, 255);
+}
+
+.empty-cart {
+    margin: 25px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    background-color: white;
+    gap: 25px;
+
+}
+
+.empty-cart h4 {
+    font-size: 18px;
+}
+
+.empty-cart button {
+    background-color: rgb(6, 5, 5);
+    color: white;
+}
+
+
+
+/* card items  */
+#cardInProduct .container- {
+    margin: 5px 2vw;
+}
+
+#itemsInCart {
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+#itemsInCart .itemDetail,
+.deliveryDate {
+    font-size: small;
+}
+
+#itemsInCart .itemDetail {
+    width: 60%;
+}
+
+#cardInProduct .placeOrder {
+    background: #dd5a19;
+    width: max-content;
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+
+#itemsInCart p {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+@media screen and (max-width : 1070px) {
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width : 890px) {
+    footer {
+        font-size: 11px;
+        padding: 0 5px;
+    }
+
+    input {
+        width: 40vw;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    nav button {
+        padding: 5px;
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .nav-left {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width : 670px) {
+    nav img {
+        height: 20px;
+    }
+
+    input,
+    nav button {
+        font-size: 8px;
+    }
+
+}
+
+footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Social Media Icons Styles */
+        .social-icons {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-icons li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #fff; /* White on hover */
+        }
+  </style>
+</head>
+
+<body>
+
+  <div class="loader-container">
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+      <div class="logo" style="background-image: url('/assets/images/LOGO.png');"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <nav>   
+    <div class="nav-left">
+       
+            <img src="/assets/images/LOGO.png" width=auto height="40" title="SukunStore" alt="SukunStore" />
+        </a>
+
+        <div class="search">
+            <input type="search" placeholder="Search for products, materials and more...">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </div>
+   
+    <!-- <a href="/account/access/login.html"><button>Login</button></a> -->
+    <a href="/index.html"><button>Back to Home</button></a>
+</nav>
+
+  <!-- Terms of use -->
+  <!-- Main Content -->
+  <div class="content">
+    <h1>Terms of Use</h1>
+    <p><strong>Effective Date: December , 2025</strong></p>
+
+    <p>Welcome to SukunStore! These Terms of Use govern your access to and use of our website, services, and mobile
+      applications (collectively, the "Services"). By accessing or using our Services, you agree to comply with and be
+      bound by these Terms of Use. If you do not agree with these Terms of Use, please do not use our Services.</p>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>By accessing or using the SukunStore website or any of our Services, you agree to these Terms of Use. We may update
+      these Terms of Use from time to time, and your continued use of the Services following any changes indicates your
+      acceptance of the new terms.</p>
+
+    <h2>2. Account Registration</h2>
+    <p>To use certain features of our Services, you may be required to create an account with SukunStore. You agree to
+      provide accurate, current, and complete information during the registration process and to update such information
+      to keep it accurate, current, and complete. You are responsible for safeguarding your account information and for
+      all activities that occur under your account.</p>
+
+    <h2>3. User Conduct</h2>
+    <p>You agree not to engage in any of the following prohibited activities:</p>
+    <ul>
+      <li><strong>Illegal Activities:</strong> Using the Services for any illegal purposes or activities that violate
+        applicable laws or regulations.</li>
+      <li><strong>Harmful Content:</strong> Uploading, posting, or transmitting any content that is harmful, defamatory,
+        obscene, or otherwise objectionable.</li>
+      <li><strong>Misuse of Services:</strong> Attempting to gain unauthorized access to our Services, systems, or
+        networks, or interfering with the functioning of the Services.</li>
+      <li><strong>False Information:</strong> Providing false or misleading information or impersonating any person or
+        entity.</li>
+    </ul>
+
+    <h2>4. Intellectual Property</h2>
+    <p>All content, including but not limited to text, graphics, logos, images, and software, on the SukunStore website is
+      the property of SukunStore or its licensors and is protected by copyright, trademark, and other intellectual
+      property laws. You may not use, reproduce, or distribute any content from the website without prior written
+      permission from Flipkart.</p>
+
+    <h2>5. Product Information and Pricing</h2>
+    <p>SukunStore strives to provide accurate product descriptions and pricing information. However, errors may occur, and
+      we cannot guarantee that product descriptions or prices are error-free. We reserve the right to correct any errors
+      and to update product information and pricing at any time without prior notice.</p>
+
+    <h2>6. Order Processing and Delivery</h2>
+    <p>Orders placed through the SukunStore website are subject to our acceptance. We reserve the right to refuse or
+      cancel any order at our discretion. Delivery times are estimates and may vary based on factors such as product
+      availability, shipping location, and delivery service provider.</p>
+
+    <h2>7. Returns and Refunds</h2>
+    <p>SukunStore offers a return and refund policy for eligible products. Please review our Return Policy for detailed
+      information on how to return products and request refunds.</p>
+
+    <h2>8. Privacy Policy</h2>
+    <p>Your use of our Services is also governed by our Privacy Policy, which outlines how we collect, use, and protect
+      your personal information. Please review our Privacy Policy to understand our practices.</p>
+
+    <h2>9. Third-Party Links</h2>
+    <p>Our Services may contain links to third-party websites or services. We are not responsible for the content or
+      practices of these third parties. Your use of third-party websites or services is at your own risk, and you should
+      review the terms and privacy policies of those sites.</p>
+
+    <h2>10. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by law, SukunStore and its affiliates, officers, directors, employees, and agents
+      will not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or
+      related to your use of the Services. Our total liability to you for any claim arising out of or relating to these
+      Terms of Use or your use of the Services will not exceed the amount you paid, if any, for access to the Services.
+    </p>
+
+    <h2>11. Indemnification</h2>
+    <p>You agree to indemnify, defend, and hold harmless SukunStore and its affiliates, officers, directors, employees,
+      and agents from any claims, liabilities, damages, losses, or expenses, including legal fees, arising out of or
+      related to your use of the Services, your violation of these Terms of Use, or your violation of any rights of
+      another party.</p>
+
+    <h2>12. Termination</h2>
+    <p>We reserve the right to terminate or suspend your access to the Services at our sole discretion, without prior
+      notice, for any reason, including but not limited to violations of these Terms of Use. Upon termination, your
+      right to use the Services will cease immediately.</p>
+
+    <h2>13. Governing Law</h2>
+    <p>These Terms of Use will be governed by and construed in accordance with the laws of the jurisdiction in which
+      SukunStore operates, without regard to its conflict of law principles. Any disputes arising out of or relating to
+      these Terms of Use or your use of the Services will be resolved exclusively in the courts of that jurisdiction.
+    </p>
+
+    <h2>14. Dispute Resolution</h2>
+    <p>Any disputes, controversies, or claims arising out of or relating to these Terms of Use or the Services will be
+      resolved through binding arbitration in accordance with the rules of the relevant arbitration association. The
+      arbitration will be conducted in the jurisdiction where SukunStore operates.</p>
+
+    <h2>15. Severability</h2>
+    <p>If any provision of these Terms of Use is found to be invalid, illegal, or unenforceable, the remaining
+      provisions will remain in full force and effect. The invalid, illegal, or unenforceable provision will be
+      interpreted to reflect the parties' original intent as closely as possible.</p>
+
+    <h2>16. Entire Agreement</h2>
+    <p>These Terms of Use constitute the entire agreement between you and SukunStore regarding your use of the Services
+      and supersede all prior or contemporaneous agreements and understandings, whether written or oral, relating to the
+      subject matter.</p>
+
+    <h2>17. Contact Us</h2>
+    <p>If you have any questions or concerns about these Terms of Use or our Services, please contact us at:</p>
+    <p>Email: <a href="mailto:support@SukunStore.com">support@SukunStore.com</a></p>
+    <p>Customer Service: +91-XXXXXXXXXX</p>
+    <p>Address: SukunStore private limited, ABES Institution of Technology, Ghaziabad-462022, India</p>
+  </div>
+
+  <footer>
+  <pre>&copy; 2025 SukunStore                                                                                            Any problem @TeamSukun is here to here . <span><a href="/contactus.html">Contact us</a></span>  </pre>
+  </footer>
+  <script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+      item.addEventListener('click', () => {
+        const faqAnswer = item.nextElementSibling;
+        const faqToggle = item.querySelector('.faq-toggle');
+        const isOpen = faqAnswer.style.maxHeight;
+
+        // Close all open FAQ answers
+        document.querySelectorAll('.faq-answer').forEach(answer => {
+          answer.style.maxHeight = null;
+          answer.previousElementSibling.querySelector('.faq-toggle').textContent = '+';
+        });
+
+        // Toggle the clicked FAQ answer
+        if (!isOpen) {
+          faqAnswer.style.maxHeight = faqAnswer.scrollHeight + 'px';
+          faqToggle.textContent = '-';
+        }
+      });
+    });
+
+
+  </script>
+</body>
+
+</html>
