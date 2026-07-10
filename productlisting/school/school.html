@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeamSukun</title>
+  <link rel="stylesheet" href="/productlisting/school/school.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>Sukun Store</h1>
+      <input type="text" id="search-bar" placeholder="Search for products...">
+    </div>
+    
+  </header>
+  <main>
+    <aside class="filters">
+      <h2>Filters</h2>
+      <div>
+        <h3>Price</h3>
+        <input type="range" id="price-filter" min="500" max="10000" step="100">
+        <p>Max Price: ₹<span id="price-value">10000</span></p>
+      </div>
+      <div>
+        <h3>Brand</h3>
+        <label><input type="checkbox" class="brand-filter" value="NCERT"> NCERT</label><br>
+        <label><input type="checkbox" class="brand-filter" value="CBSE"> CBSE </label><br>
+        <label><input type="checkbox" class="brand-filter" value="OSWAAL"> OSWAAL</label><br>
+        <label><input type="checkbox" class="brand-filter" value="PARIKSHIT"> PARIKSHIT</label><br>
+        <label><input type="checkbox" class="brand-filter" value="ALL IN ONE"> ALL IN ONE</label><br>
+        <label><input type="checkbox" class="brand-filter" value="StudyIQ"> StudyIQ</label>
+      </div>
+      <div>
+        <h3>Rating</h3>
+        <label><input type="radio" name="rating-filter" value="4"> 4★ & Above</label><br>
+        <label><input type="radio" name="rating-filter" value="3"> 3★ & Above</label><br>
+        <label><input type="radio" name="rating-filter" value="2"> 2★ & Above</label><br>
+        <label><input type="radio" name="rating-filter" value="1"> 1★ & Above</label><br>
+      </div>
+      <div>
+        <h3>Sort By</h3>
+        <select id="sort-by">
+          <option value="relevance">Relevance</option>
+          <option value="price-low-high">Price: Low to High</option>
+          <option value="price-high-low">Price: High to Low</option>
+          <option value="rating-high-low">Rating: High to Low</option>
+        </select>
+      </div>
+    </aside>
+    <section class="products">
+      <h2>School Materials</h2>
+      <div class="product-grid" id="product-grid">
+        <!-- Product Cards will be dynamically inserted here -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>TeamSukun | All rights reserved.</p>
+  </footer>
+  <script src="/productlisting/school/school.js"></script>
+</body>
+</html>
