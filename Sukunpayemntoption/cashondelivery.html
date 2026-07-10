@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash on Delivery Confirmation</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            width: auto;
+            background-color: #a7a0a0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            background-color: #d3cbcb;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .header {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .receipt {
+            background-color: #f6f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #989191;
+        }
+        .receipt h3 {
+            margin: 0 0 10px 0;
+        }
+        .receipt p {
+            margin: 5px 0;
+        }
+        .success-animation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .success-animation svg {
+            width: 100px;
+            height: 100px;
+            fill: #0f41e6;
+            animation: popIn 0.5s ease-in-out forwards;
+        }
+        @keyframes popIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        .next-step-btn {
+            display: block;
+            width: 95%;
+            padding: 15px;
+
+            background-color: #0f60f5;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .next-step-btn:hover {
+            background-color: #218838;
+        }
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="success-animation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm6.444 8.116L10.875 17.25a1.25 1.25 0 01-1.916.163l-3.5-3.5a1.25 1.25 0 111.768-1.768l2.575 2.575 6.116-7.64a1.25 1.25 0 111.926 1.536z"/>
+        </svg>
+    </div>
+    <div class="header">
+        Cash on Delivery Confirmed!
+    </div>
+    <div class="receipt">
+        <h3>Receipt</h3>
+        <p><strong>Order ID:</strong> #12345</p>
+        <p><strong>Date:</strong> January 3, 2025</p>
+        <p><strong>Total Amount:</strong> $120.00</p>
+        <p><strong>Payment Method:</strong> Cash on Delivery</p>
+    </div>
+    <a href="/order-summary.html" class="next-step-btn">
+        View Order Summary
+    </a>
+</div>
+
+</body>
+</html>
