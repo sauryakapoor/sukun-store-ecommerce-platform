@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Map with Detailed View</title>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+    }
+
+    #map {
+      height: 600px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #info-box {
+      margin-top: 20px;
+      padding: 15px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #info-box label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    #coordinates-field {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      font-family: monospace;
+      font-size: 14px;
+    }
+
+    #copy-button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #copy-button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      #map {
+        height: 400px;
+      }
+
+      .container {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive Detailed Map</h1>
+    <p>Click anywhere on the map to get detailed latitude and longitude coordinates. Explore cities with precision!</p>
+    <div id="map"></div>
+
+    <div id="info-box">
+      <label for="coordinates-field">Coordinates:</label>
+      <input type="text" id="coordinates-field" readonly placeholder="Click on the map to see coordinates">
+      <button id="copy-button">Copy</button>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    // Initialize the map
+    const map = L.map('map').setView([20.5937, 78.9629], 5); // Default to India with higher zoom level for city view
+
+    // Add OpenStreetMap tiles for detailed view
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19, // Maximum zoom level for detailed views
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Handle map clicks
+    map.on('click', function (e) {
+      const { lat, lng } = e.latlng; // Get latitude and longitude
+
+      // Display coordinates in the input field
+      const coordinatesField = document.getElementById('coordinates-field');
+      coordinatesField.value = `Latitude: ${lat.toFixed(6)}, Longitude: ${lng.toFixed(6)}`;
+    });
+
+    // Copy button functionality
+    document.getElementById('copy-button').addEventListener('click', function () {
+      const coordinatesField = document.getElementById('coordinates-field');
+      if (coordinatesField.value) {
+        coordinatesField.select();
+        navigator.clipboard.writeText(coordinatesField.value)
+          .then(() => alert('Coordinates copied to clipboard!'))
+          .catch(err => alert('Failed to copy coordinates.'));
+      } else {
+        alert('No coordinates to copy!');
+      }
+    });
+  </script>
+</body>
+</html>
