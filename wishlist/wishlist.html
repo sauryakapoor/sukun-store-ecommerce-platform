@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wishlist | SukunStore</title>
+  <link rel="stylesheet" href="wishlist.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Header -->
+  <nav>   
+    <div class="nav-left">
+       
+            <img src="/assets/images/LOGO.png" width=auto height="40" title="Flipkart" alt="Flipkart" />
+        </a>
+
+        <div class="search">
+            <input type="search" placeholder="Search for products, materials and more...">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </div>
+    <a href="/index.html"><button>Back to Home</button></a>
+
+</nav>
+
+  <header id="wishlist-header" class="text-center text-white py-3">
+    <h1 align="center">My Wishlist</h1>
+  </header>
+
+  <!-- Wishlist Section -->
+  <main class="container">
+    <section id="wishlist-items">
+      <!-- Wishlist Item Template -->
+      <div class="wishlist-item">
+        <img
+          src="https://images-cdn.ubuy.co.in/65a4d1da79c8e03a06140a3c-oneplus-12-24gb-1tb-6-82-amoled.jpg"
+          alt="OnePlus 12"
+          class="item-image"
+        />
+        <div class="item-details">
+          <h2 class="item-name">OnePlus 12</h2>
+          <p class="item-price">₹59,299</p>
+        </div>
+        <div class="item-actions">
+          <button class="btn btn-primary move-to-cart">
+            <i class="bi bi-cart"></i> Move to Cart
+          </button>
+          <button class="btn btn-danger remove-item">
+            <i class="bi bi-trash"></i> Remove
+          </button>
+        </div>
+      </div>
+      <!-- Add more wishlist items dynamically -->
+    </section>
+    <div id="empty-message" class="text-center">Your wishlist is empty!</div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="wishlist-footer" class="text-center py-3">
+    &copy;2025 TeamSukun. All rights reserved.
+  </footer>
+
+  <script src="wishlist.js"></script>
+</body>
+</html>
