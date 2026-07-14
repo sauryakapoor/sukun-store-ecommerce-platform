@@ -1,0 +1,2331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Sukun</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="/logoicon.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+  <!-- loader  -->
+
+<!-- <div class="loader-container">
+  <img src="/logindone/Loading Slider.gif" alt="">
+</div> -->
+
+
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">Welcome to Sukun</p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Search product" class="search-field">
+
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="SukunStore">
+        </a>
+        <!-- <header class="header">
+          <div class="header-actions">
+            
+            <button id="dark-mode-toggle" class="dark-mode-btn" aria-label="Toggle Dark Mode">
+              <ion-icon name="moon-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+        </header> --->
+        
+        <div class="header-actions">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link mr-5" href="/viewcart/index.html" style="font-size: 14px; margin-left: 20px; font-weight: 500;">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
+                    style="width: 20px; height: 20px; margin-right: 5px;" /> Cart
+            </a>
+        </li>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown" id="navbarDropdown">
+                <a class="nav-link acnavdd ml-3 mr-5" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="/assets/images/svg/profile-.svg" alt="Profile" href=""
+                        style="width: 20px; height: 20px; margin-right: 5px; margin-left: 10px;" />
+                    <span class="navname" style="font-size: 14px;">Account<i class="bi bi-chevron-down"></i></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left: 0;">
+                    <a class="dropdown-item d-flex gap-2" href="/logindone/account/myprofile/myprofile.html"><img width="20"
+                            src="/assets/images/svg/profile-.svg" alt="SukunStore" style="margin-right: 5px;"> My Profile
+                    </a>
+                    <!-- <a class="dropdown-item d-flex gap-2" href="/account/access/login.html"><img width="20" src="/assets/images/svg/profile-.svg"
+                            alt="SukunStore" style="margin-right: 5px;"> Log in / sign up</a> -->
+                   <!-- <a class="dropdown-item d-flex gap-2" href="plus/"><img width="20" src="/assets/images/svg/fkplus-+.svg"
+                            alt="SukunStore" style="margin-right: 5px;"> SukunStore Plus Zone</a> -->
+                    <a class="dropdown-item d-flex gap-2" href="/account/myorder/orders.html"><img width="20" src="/assets/images/svg/orders.svg"
+                            alt="SukunStore" style="margin-right: 5px;"> Orders</a>
+                    <a class="dropdown-item d-flex gap-2" href="/account/wishlist/wishlist.html"><img width="20" src="/assets/images/svg/wishList.svg"
+                            alt="SukunStore" style="margin-right: 5px;"> Wishlist</a>
+                    <a class="dropdown-item d-flex gap-2" href="/account/notification/notification.html"><img width="20"
+                            src="/assets/images/svg/notifications.svg" alt="SukunStore" style="margin-right: 5px;">
+                        Notifications</a>
+                    <a class="dropdown-item d-flex gap-2" href="/account/rewards/rewards.html"><img width="20"
+                            src="/assets/images/svg/rewards.svg" alt="SukunStore" style="margin-right: 5px;"> Rewards</a>
+                    <a class="dropdown-item d-flex gap-2" href="/account/the-gift-card-store/index.html"><img width="20"
+                            src="/assets/images/svg/giftCard.svg" alt="SukunStore" style="margin-right: 5px;"> Gift Cards</a>
+                    <a class="dropdown-item d-flex gap-2" href="/updatedco-ordinate.html"><img width="20"
+                              src="https://img.icons8.com/?size=100&id=kus9aVk0G8Ry&format=png&color=000000" alt="SukunStore" style="margin-right: 5px;">Your accurate location</a>
+                    <a class="dropdown-item d-flex gap-2" href="/maps/accuratelocation.html"><img width="20"
+                                src="https://img.icons8.com/?size=100&id=kus9aVk0G8Ry&format=png&color=000000" alt="SukunStore" style="margin-right: 5px;">Nearby Location</a>
+                    <a class="dropdown-item d-flex gap-2" href="/contactus.html"><img width="20" height="10"
+                            src="https://pngimg.com/uploads/phone/phone_PNG48988.png" alt="SukunStore"
+                            style="margin-right: 5px;"> Contact Us </a>
+                    <a class="dropdown-item d-flex gap-2" href="/account/feedback/feedback.html"><i class="bi bi-chat-dots"></i> My
+                        Feedback </a>
+                    <a class="dropdown-item d-flex gap-2" href="/account/access/logout.html"><img width="20" height="10"
+                          src="data:image/png;base64,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" alt="SukunStore"
+                          style="margin-right: 5px;"> Log Out </a>
+                </div>
+            </li>
+
+          
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link has-after">Home</a>
+            </li>
+
+            <li>
+              <a href="#manu" class="navbar-link has-after">Manufactured</a>
+            </li>
+
+            <li>
+              <a href="#collection" class="navbar-link has-after">Books</a>
+            </li>
+
+            <li>
+              <a href="#shop" class="navbar-link has-after">Refurbished</a>
+            </li>
+
+            <li>
+              <a href="#offer" class="navbar-link has-after">Offer</a>
+            </li>
+          
+            <li>
+              <a href="#electronics" class="navbar-link has-after">Electronics</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="navbar-link has-after">Special Item</a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="SukunStore">
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="#home" class="navbar-link" data-nav-link>Home</a>
+        </li>
+
+        <li>
+          <a href="#collection" class="navbar-link" data-nav-link>Collection</a>
+        </li>
+
+        <li>
+          <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
+        </li>
+
+        <li>
+          <a href="#offer" class="navbar-link" data-nav-link>Offer</a>
+        </li>
+
+        <li>
+          <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero" data-section>
+        <div class="container">
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-1.jpg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    Time to <br>
+                    Jump in Competetion
+                  </h1>
+
+                  <p class="hero-text">
+                    made for students to achieve their goal and crack the cometetion exam with an ease, our products are designed for everyone.
+                  </p>
+
+                  <p class="price">Starting at Rs 49</p>
+
+                  <a href="/productlisting/competetive/competetive.html" class="btn btn-primary">Check Now</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-2.jpg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    Refurbished Books <br>
+                    Refurbished Notes , <br>
+                    Short notes , etc
+                  </h1>
+
+                  <p class="hero-text">
+                    Made using trushworthy seller, our products are designed for everyone.
+                  </p>
+
+                  <p class="price">Starting at Rs 99</p>
+
+                  <a href="/productlisting/Refurbished/refurbished.html" class="btn btn-primary">Shop Now</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-3.jpg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    Exam  <br>
+                    Tackle Time
+                  </h1>
+
+                  <p class="hero-text">
+                    we are here for your exam with amazing cheatsheets mock test papers and latest release sample paper and also previous year question paper with solution from sellers.
+                  </p>
+
+                  <p class="price">Starting at Rs 9</p>
+
+                  <a href="/productlisting/examtackle/examtackle.html" class="btn btn-primary">Shop Now</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+      
+      <section id="saurya" class="section-p1">
+        <div class="sk-box">
+            <img src="/assets/images/Features/f1.png" alt="">
+            <h6 style="background-color: #89D8E1;">Free Shipping</h6>
+        </div>
+        <div class="sk-box">
+            <img src="/assets/images/Features/f2.png" alt="">
+            <h6 style="background-color: #EA8FC3;">Online Order</h6>
+        </div>
+        <div class="sk-box">
+            <img src="/assets/images/Features/f3.png" alt="">
+            <h6 style="background-color: #B8DD7F;">Save Money</h6>
+        </div>
+        <div class="sk-box">
+            <img src="/assets/images/Features/f4.png" alt="">
+            <h6 style="background-color: #ABD0E9;">Promotion</h6>
+        </div>
+        <div class="sk-box">
+            <img src="/assets/images/Features/f5.png" alt="">
+            <h6 style="background-color: #A28FDA;">Happy Sell</h6>
+        </div>
+        <div class="sk-box">
+            <img src="/assets/images/Features/f6.png" alt="">
+            <h6 style="background-color: #E0A789;">F24/7 Support</h6>
+        </div>
+    </section>
+    
+      <!-- <div class="info-cards">
+        <div class="card">
+          <div class="icon">🚚</div>
+          <div class="title">Free Shipping</div>
+          <div class="subtitle">Order over $100</div>
+        </div>
+        <div class="card">
+          <div class="icon">🔒</div>
+          <div class="title">Secure Payment</div>
+          <div class="subtitle">100% Secure Payment</div>
+        </div>
+        <div class="card">
+          <div class="icon">👍</div>
+          <div class="title">Best Price</div>
+          <div class="subtitle">Guaranteed Low Cost</div>
+        </div>
+        <div class="card">
+          <div class="icon">🔄</div>
+          <div class="title">Easy Return</div>
+          <div class="subtitle">Within 30 Days returns</div>
+        </div>
+      </div> -->
+      
+     <section class="section manu" id="manu" aria-label="manu" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Self Manufactured Products & Materials</h2>
+
+            <a href="/productlisting/manufactured/manfactured.html" class="btn-link">
+              <span class="span">Shop All material</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="manu-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="https://store.codewithcurious.com/wp-content/uploads/2023/11/combo.png" width="540" height="720" loading="lazy"
+                    alt="TeamSukun" class="img-cover">
+                  <span class="badge" aria-label="50% off">-50%</span>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <del class="del">Rs 999.00</del>
+
+                    <span class="span">Rs 499.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">Programming languages self written notes by sukun </a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">517 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="manu-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdmiyPR40-eiKkAmeOJpZVSz5Sn5eYMxhFpw&s" width="540" height="720" loading="lazy"
+                    alt="Bio-shroom Rejuvenating Serum" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">Rs 199.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">Posture reminder gadget</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">217 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="manu-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTt3m6nnODVfII08QuAhRASvtu40Uzb631CA&s" width="540" height="720" loading="lazy"
+                    alt="TeamSukun" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">Rs 300.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">Creative 25 minute timer</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="manu-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxc-9UXk0kdxq_rY4qHcKCKfq8H3v8cBb_kw&s" width="540" height="720" loading="lazy"
+                    alt="TeamSukun" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">Rs 400.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">Lemon battery physics projects</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="manu-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="https://m.media-amazon.com/images/I/71OEGb1nq1L.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+
+                  <span class="badge" aria-label="20% off">-20%</span>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <del class="del">rs 500.00</del>
+
+                    <span class="span">rs 250.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">Ruffpad with 12 chalks</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="manu-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxATEhUTEhIWFhUWGBcaGBcXGRcYFhoYFxgYFxsaGCAdHSggGB0mHRcVIT0hJSkrLi8uFx8zODUtNyguLisBCgoKDg0OGhAQGzclICYtLTAtLS8uNy0rLS0rLSsvLS0wNS0tLS0vLS8tLS0rLS0tLS0tLystLS0tLS0tLS8vLf/AABEIARcAtQMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAwQFBgcCAQj/xABLEAACAQMCBAMEBQgFCgYDAAABAgMABBESIQUGEzEiQVEHMmFxFCNCgbEVMzRSc5GhwRZygoPRJTVTYpKTorKz0iRUo+Hw8UNVY//EABoBAQACAwEAAAAAAAAAAAAAAAABAgMEBQb/xAA3EQACAQIDBAcGBgIDAAAAAAAAAQIDEQQhMQUSQVFhcZGhsdHwEyIygcHxFDNCUpLhguJDYnL/2gAMAwEAAhEDEQA/ANvjGw+VJ3cGtdOcZK74B7MD57eWKWooCKawnyQJyB48HBJXOkL3PiwA3fzOaXWzk046pJ1Kcn0AAIOMZycny770+ooBhBZyBgTKSBnw74Odt85PpsPTbGSK8hsGH28eBl8I82bVqHy3wN8Z/fIUUBHXfD3fGJMYUAnGS2CDv6g47dtzS8tqWDgufEun4A4xkYp1RQDA2b4lGvaQNg43UnOPmADjf9UetJrw+YbCbH3fu8/I5O2M5wdgBUnRQDAWUgVV6vbVvjuCMDbPl/8AMnevI7GTxapCQVI074BJznfJ9fPzxvgVIUUAyS0cEEuPzegkLjJ9dvd8zgfyFQE3MVmki6ro6o8qwaOTUTuCWwowd/LA27dtNsqqc48qC5HViwswHyDgeR9D6H7j8MdVzUbwNjDRoynaq2lzQmvNFjoVDcjwtkHpydt9iNODjOPuz33CcPM9rgar05wvaOU7jc918QPi2O2/wFZpcRMjFHUqynBUjBB+NJGtD8bU5I7y2NQeak+7yNq4HeRzorRTGXpllLEMMkjODkDsCu/wpc8ObSq68AeY2I8SMPmfCRk/rb53zW/ZT+jS/tj/ANOOrtW/Sk5QUmcDFUlSqygtEMLa1lRSDLk6AM4OxC41AEnzwcfvz3qtnmew0uDd+JgBq0THABYjGQe2rv32z3q4v2Pyr54NY69V07WNzZ2Chid7fbVradNzUTzLZa9X03O+cdOYdwB6Hsd8DA2AI7ES/Deb7BzHEk2XbSoGiQZY7YyVxWKmpPlU/wDjLfH+lT8awxxM20joVdj0YwlJN5J8vI3iiktT/qr/ALR/7aK3jzgrRRRQBRRRQBRRRQBRRRQBRRRQBRRRQBRRRQEJzHyzBdjxDTIB4ZF94fA/rD4H7sVlvHuXLm1P1i5TykXdD8/1T8D/ABrba5ZQRgjIPcHtWvVw8amejN/CbRq4fLWPLyKX7Kf0aX9sf+nHV2pjaWVvbB+mqxKzamxsurAGfRdgNhTC+5pgTZQ0jHtpBAJ+BPf7s1KnChBKbMVZyxNaUoLUnH7GvnY1vVg87KXmCpkbRjcgf659fgAP8MLNnL/opP8AYb/CsGJe8otHV2NaLqJvl9RuTUpyp+m237VPxpGDgt25wltMf7twP3kYq0cq8k3q3EU0irGqOrEMwLEA5wAuR+8isNOEnJZHUxWIpRpSTktHx6DVhRRRXUPGBRRRQBRRXErYUn0BNAd0V838N5x4zcyxxpeSa5nVQBpCguQOwXZRnPyFaP8A0Q4//wDuP+E/4VFzGql9EaTRWScxcG47aW0lw3FS6xjJUDBIyBtkfGkvZHzdez3bQXEzSoyFhrxlSvoQBsc9j6Clyd/OzRsFFVK25+tm4k/DWR0kU4V206HbQH0jfIOknuPs49K84xz/AG0F/DYaHklkZFYrp0xmQ4UNk5zghsDyI9akuW6iqrzdz1b2MiQdOW4uZN1ggXVJjfc+g2PqdjtgE025c9okFxcfRJree0uCMrHcLp19/dPrse4GcbZ3oC50VVebuebexdIenLPcSbpBAuqQjfc+g2PqdjtgEjjlXnhbud7Z7O5tpkTWVmTA05xnPlv6gA4OM4NAW2iqnwXn21mtJ7xw0MVvI0bl8EkqEPh0k5zrAA7k1J8qcda9gFx9HkhR94xIV1Mvk+FJwp8s9+/bBIDjjF40aqVKrqYKzuCUQaWbLAEdyqr3G7jv2NUtr6V0twdPUHTCFtTOMzorM2X1YIXHu4O41gnTV1uYi22Mj54IP7jTb6B8/wDbPy/VqcuJF2tCM4fxuWSZoWC4VZAcKVOpCozu5OlskgEeWzNg1YhTJbVh2G+CN2JG/n7tPhRhBRRRUEhRRRQBRRRQBSdx7jfI/hSlJ3HuN8j+FAfOvsjKC/jdkLlInZFBUEvpC58TAHCs5x9/lWnc1cS407obBVhjCnUJDCzMxPl7wAAx5+Z9KxblW3uzIklpGzyQ6X8IyB5eLcbHcY8xmrlf+0XiML9Oa1hRxglWEgOD2+3XGxlXGqoo4ZxeWaeq79ClF01D37rqGPNnMvGwjW16xVJBgjpxBWAIPhdRg9h2Oac+xX/OP90/8quZKcRs1WWMKLhC0Tjca1yDjPuyIwPh3BAOCw1YpfsT/wA4/wB0/wDKs+AxVWrvQrR3ZxtdcM9GiJ01Gaad0x9ecsm+4pxgRnTcQNbS275xpkVAcZ9GwB8CFPlSM3LklrdcHluCWu7q7aW4Y4yGLQkR7bYXJ7bZJxtjF8Tmzl+3ubiQXEaXDtpnOJNRaMlcNtjbBG1ObnjnBLpBevLHIlm6kS4kxE7lAPIZJITyNdIyFY4dew2nMd6bwiM3EcZt5ZMBNOlFKhj2yV0/OPHmM8+0u+gu7/hlvaMstylwrs0ZDdONWRm1EHb3dePRPiMzPG+beWrxRHczwSgHw6lk1AnbwkLlSfgaeluA8Ex+ZtmkHo7ysuf7T6c/dmgK5a3kVpzJdNeMEFxCn0eRyAmNMalQTsuSjD5rj7QzoNrzFZSTm3juInmC6iisGbT922dwcd8HNQvGuI8DvbMz3DwTW0ZALnJMbOQoHh8cZOV9DuKh+X+YuVrLP0WWCItsWAkLEempgWx8M0BmPCeDXslpNdoEmtrO8aRrVskSMApldgO4CaBvnYvt5N9B8ucahvLeO4gOUcdtsqRsVbHYg5H3VC/lPg3C4AepHbxTnqgeNjIWVcuF3Y7ad8elL8kfkrpu3DDHoZgXWNmwGI2JQn6skfAbAegoCy0UUUAUUUUAUUUUAUUUUAUUUUAUnce43yP4UpXjLkEHzoD5s9mvHktLgdU4ilQIzeSnYqx+Gcg+mrPlWlc08qWt48Mj6gxeJNcZHijdwPMEH3iQfjULcexaQMRFdLoz4dSnVjyBxsT8ac2fsv4jEAsXESigghVMgUEHIIGcA532rkV9mOeKhiacrNWv0r7ZFacpKDpyV0TvP1/b8NsIooQA6sggTOT4T42PnjSWBY9y/wAaoHsTH+Uf7p/5VNXXshvJGLyXokc92fWzH5kkmrByF7OnsLgzvMr+EqAoI7+ua6m7729b0r+ZS0nJPgR/tm4ZbolkyQxKz38QdlRQWDBywYgeIE9896k/a3w+CHg10IokjBMBPTVUyfpEW5wBmp/nPluG9SHrSmNYJkmBGnBZAQA2fLxU55r4DHf2klq7siSaCWTGoaHWQYyCO6irmUz7lkX7C2V+X7XokQhpy9uW6Z0gy6e5OnxY70+5x5av14l+UbSCC7zCI3t5iAyjPdNRCjt3z5uMHNKp7LXAAXjHEgAAABMQABsAAOw+FSvMnICXNwbqK8urWcqFZoZCAyr2BB7D4AgZJOMnNANPZ7xCxu47m3/J6WskcgNxbMilNbZww8IB3jPkMaR8CYblrhNs3MHE4mgiMaRwaUMaFFzHFnSMYHc9vWrnydyhBw9ZNDySyzMGlmlbVI5GcZPoMsfXLHJNd8N5Wjhv7m+EjF7lUVkONK6FVQV2z9kd/WgKrzvyrefT4b+yht7jpQiI20uAAAXwY84UbOR3GMeecB/7NuNW8r3UAsBY3MbK08ShdJLDAYEAenbGPFkZzmnnNPIkd3Otyl1c21wq6OpDIRlAc6SD2GfIEA+eaccncmQ2BlkEss885BlmmbU7ac4HwG59T8cAAAWaiiigCiiigCiiigCiiigCiish5w41dx8dhijuJVjJt8xh2EZ1HDZXODn5VDZWUrGvUVkHDuNXX9IngNxKYeq46RdjHjp5wFJwN6rnDbvit1c3SRcQmToiaTDSyadKORpG5A8vLFLlfaH0FRWK8M9oN83Cbpi+ZomhVZsDUEmbTk4GNQ3AOPMdyN47gX5YVILyzuZ7vWziaLW8gQqR4ZFdjnUCTnAIxt3pce0XA3uisY5743e3XFF4fBPJAoMS4RmTxyIshLlSCwAcDHbw0/8AZ7xPiNvxCTh908s0fjCvIHOGTxBlZt9LLnYk+WPiuTv52NE4rE8hVYjhk1Pk6gmrQQgbHfxMrY39yu7GzlV9TyEqB4V1EgEs5OdhqwrIBn0PoKYc/XDx8OunjdkdYmKspKsD6gjcVU/ZtzBN+Srq4uJXlMJlYF2LthYwwGTv38vjS5O9nY0yisE9m/NF6L+3Se5mkjmDLiSRnUk6gDhjsdS4zUr7ROMXUvFVshdvawjpqGVmRcuuou5UgtudOCcbfM0uV9orXNmorP8A2ZNxWOSa3vllaNPzU0niJw2kgMSSwIwwzv3p9yJeS3M9/ctI5iM5ihQsTGFhGksi5wNR3yO9SWUrlyorJfbJxi6gurUQXEsQKEkI7KCQ47gHB++o/wBoHEb48WS2gu5ohIsCgLI6oGfbOFNRchzsbVRWP8mc0cQg4hLY3U30gKJQCfEQ8alxpbAYggYIOd8dt81fhF3xW/E9xFfTG4j0OtukjqXVmw3TUMFCr3xg58+9Lke06D6IoqG5QurmS0ia7jKT4IcEaSSpI1Y8sgA/fUzUmQKKKKAKKKKAKxL2gkJx+Bm2GbU5PprI/EGttqnc9cu8NvSouZ1ilQEK4kRW0nfSwY4Yee/bfHc1DKyg5ZIoPBXV+ZXZCGXrS7jceGMg/wAQagOXOXJL+9uYI5ulvMWOCQy9XBUgEZG42O21adyhy3wmwkMqXcckmMBnli8IPfABpbl3gfCrO5kuYrxS0gcFWmiKjWwY4xv3HrVciPw88roYzcGs+DcOlE0bXSzOqzYCjOrIXYnYD55yazq8f8nSW15w+4bRcKXEbEF1CkZimAOHGWIB+B8xmtw4xc8NuYXgnngaNxgjqoOxyCDq2IIBB9RVH4f7PuCxyiRr5ZFByEaWIA47aiNzRtEyoVOCIC9lC8yLI/hDyQMCdhh7eMfjkfdV24L7QWn4m9isSGMNIBKrkk9PzxjGNiO9d838B4RxAq0lzEkijSHSWPJXvpYE4YDJ+WT61zyfy/wmwYyR3cbyEY1PLHsPQAHaifSSqNVPQmfaR/my7/ZN/Ksk4bf9Ll+5UHBmuljH3hHYf7KMK2HjV1YXMElvJdRBJFKsVljDYPpvVRbkrg5thbfT/AJTKD1oc6igTfbGMD+Jo2hKjUbulwMrPFNAsmETIbcklznEn1vVyuwxjJHc960Xnabh3Eb36G6PDcqoEd14OmwaMTKrjOWXDH4g5x3ObDxvgPCbm2gtpLtAtvgIyzRBvd0nPlv/ACpnzBylwe6WIPeIskUax9QSxanRBhdY7Ej12NMivsKiurFU5A5vuLe3vopJNaW8DvEc6grg9NVVvNGYrgfu71p3s84V9G4dbxEYbQGb+s/iP41SLzlCxjt1t7W6gbqzRG4eSaMMYYzq0qB/rBTj4VpC8cswMC5gwP8A+qf41KaLwo1FqmZT7dP0u0/Zt/1BUf7R7VpeNRxK5RnW3UOM5UnYHYg7VoHNvBeFX8kckt4itGCBomiAIJB3znzFccU4Fwqe8jvGvVEkfTwBNFpPTORkHf8AjUOxV0Kjby4obcq8gJw1pLyWUzyokhAC48iWxkklj239azvjaWc0cnErBntXilQNCWUNqkIxJAVOV7nK9sBsYxg7ueO2f/mYP97H/jWdXvs84I8pdL1Y1Jz01liKjPcKScqPh5UdhKhO1lEuXs84xLdWEM028h1KzYxqKMV1bbb4B2qyVG8AitY4VitWQxxjA0MG/eQe5Oakqui1msmFFFFAFFFFAVrn/i721qTGcPIwjVvNcgsSPjhT95rN+VuCR3Rm6khQqoKtkY1u2ka8gkjJHp371qfN3BPpdu0QIDghkJ7alz3+BBI++ssjsr23WeE2sh6qBGIR2AAbVlSoIP76066e+m1kd7Z0o/h5Rg7Tv87XX0uOOKcrCC2jd3AnaZY3UkdOMOpYaiBnONJJ9D2r205TYXECSFJY5jIAUdlGUQsQSUyvYHsc1zZX1/GFzbSuwuBcFnjlJZgnTwdu2PP5U8/Ld4HiZbKX6p5HUMLiQkyKVILMM4GSdqxWhrY23LEpOO8nrndcsrZ3WehF23KsrxpIskOXjaVIyxEjKvvADGMj543pre8EeKGOZ3j+sVWVMtrKuMgjw6TtuQDtUnaX96hhItJD0YniH1cu4fOSdu+9czXN0bX6KtlKq+DJ0zsPq9wVVsiMnzI771DULZGRVa6krtWvzWl308rCPCOEQmFZ5xK3Ul6UUUWkMzYySS2wHlj1rqXlhzNKqgwxxhWLXJAID7LnQCCSwYDHpXvDZLmOMwyWLzRFtYRkmUq+MalZRldvL/3y+g43frI7fQ5NDpHH00WePCxZ0aXXxAjUd/PNSlCyuVnOupScWujNW1Wmetr6rXiR8fKk2ZA8kMfSdEYuxCkyDKlSBuDkfHf50W/KVwzSKzRR6JOll2IDyYB0phTnYg5OO4pW6vb11lVrWX62SOTdJmK9PsoLZJHzNP4eP34aUmzlKySdTSBcR6X0he6YLLhR4TtRKn0iVXFWumu7o6eshJeXZUgaeR40Cu6FWbD60bSVAx4j7x28lNPoOU2WSAu8ckUkqxsYmbILDON1HcZ3FIzXF6yxKbaUmKZpgTHK2WZg2GyNxkeuTUlPxy9JBFlKMTiff6Q+XAIwNQ8K7+6MAUSgJ1MRaya48V8vMhOF8MilvOg76E6ki5yM4XVgAnbJwBk+tS6crxPdRwFZ7cMkjETGMklOwiZAVb1PoAaiIbe4ExlayeQMzEo8UhQ685HbyzsflUsvFrtZIGjsXSODqaY9MzZ6gIbLMM+e3pUR3eK4k1pVb+5L9PNa2fTztw+ZFxcuu3S0yxMJpWiRgW05X7Xb3TTvg3Kxd4jNJGqPKyBC+mSQRtpcxjHkQe+Pwy44fxK5iCqvDmIjlMkWUn+r1DBUfrbeZ/jRacVu10F+HmRopHeJmjmBTqPrZdh4t+2e23pUqMPVys6mIaaTXar8enqv87DaTl0uIlhUapJrlNTPtphcjLDT4QFHfJz6UkOU5zIqK8bK0byCRSxQrGQr4wuokFlGAPMU7tuKX8ZjKWsgMck7/m5fF121Mp22AzsRv2rubid00yyGynwilVUtdlhqIJZZM6g2wHy2paA9piI5Jq2fFPi7ceroICKaS1n1RSLrjONaElG9R2GpfIg1uvDboSwxygYEiK+PTUAcfxrJl4He8QuWkaFoQ5GpmVlVQAF21bu2B9574rXbWBY0VF2VFCj5KMD+ArPhk1fkc7a1SE1D99s7CtFFFbRxgooooAooooAooooCL5ou3hsrqWM4eOCZ0OAcMkbMDg7HcDvVB5b5overw4PfxXf01QZYBHGssGYeoWzGeynwnUPI/dovGrD6RbzQFtPWikj1YzjqKVzjzxnNMeXeWba0gSOOOMOsSxvMkapJJpUKWYjfJIzuTvQEfa855u0tZrWSLqs6RyF4ZFZkBbDBHLR5VSRqFR6+0pNAnayuFtRKYpLgmPQjdTpZxq1MmcZYDAzjc7UcE9nX0d7Q/SFZbR3ZAsCI7h1ZfrXDEu3izqGAfMZ3EZwX2f3clt9Hurl47driWSW10xNqHXaRAJAcojYViu5yT27UBN8a9oMUEsyi3lkityq3EymMLGWAOApYPJgMCdI2p5/TFDfNZJBK7KI2aRQDGsciltbHyxsMdyTt2OGHEuQA91JPFcLGszK8qNbwTtqAAJieQHp6gBkEMO9Tdhy+Iru5ulk/SEhTQFA0dFWUEHfOdXbG2KAZ8n83fT8ulrIkJBKSl4WVsNp0sEctG/c6SPI/e35q4hew3tiI5kFvPOsTx9MFz4JHJLknA8K7AA99665c5Ne3u3upbrrO0Zj8MMcJYFlbVMU/PONIAYgdzUrx3gYuJLWQvp+jTCUDGdWEZNPfb3u+/agHXF+MW1qge5mSJC2kM7BQWIJxk+eAT91LR3sTRCYOpiKaxJkaNBGrVntpxvmlZI1bZgD8xmkb6wimiaGRA0bqVZOwKnbG1AUjg3Nl3c8ThCjRYywztCCo6kvTZAJjkakU6jpGRkbnuK0Cqdb+ziwju4bmKMRiEHEY1EF8qVfJbYrg7YxvVxoAooooAooooAooooAooooAooooAoorygPaKKKAKKKKAKKKKAKKKKAKKKKAKKKKAKKKKAKKKKAKKKKAKKKKA+R+o36x/ea0Hkrh/C7zTbfR7kydFnnujKyrC4zjChtBXI2LDPbIO+KOeFXP/l5v91J/21oMXHLQWa2Y4ZfpGQOr0gUMrYGTI2NTA47ZxjbGABWNGpDXMieG2NjbWEV7eRyXJuJHSONJHiVUjLKz5BBJOknBPmvbc0cf4HZWt2wklmNrLbLPBpb60F3VQm+zYAkO/ljzGT1wniKG1FnfcOupYY5GkhMYdZE1Eko3bIOpt8+fbYGkeK8XmuLw3E3DZGjEaxRQ6HwiIwYbmMgk+NScZAkOCCoNC11YaXnD+H5cx37YzMUTDdlciMaiNvDvk+9jbGa4uVsI551V2mh6cjQt1HQ9QatKHAyfJd++A3ngLJMolSQ8IJRYijR6JArNnaQ4T3sZH35zkClIriMLg8HdjiEairDeNsu20WxcbEbjfG4AFCom/DuGKWxxB3GCF2ZMkwuyns3/AOQIOwxqwcmobisUCPKIblpFGjpNpJD6gC+o5GjTv2DZxj41NJfTK4dOHPtBJDoeHKMHkZwWCxLnwnSRt6jTT2biwYux4Q5Z+oXJVvFrmSUah0sELoAx+FA7DG6h4X9JkRbhxD04+mwZziRpEDZyMvhCzeQ2Ppim30Gx68Uf05+kwkMkmk4QgsEUepOkZYjHiBHfaQs+Iukc8X5Om0SziUKocKEDITEQYyGXCkfDV2r1LyMAf5FYn6z3kY7PIHAx0h7qgoD3Gc0GQ2h4fw0GItxBmz0y64ZNiw174JGFONPfOTkgU3tE4eDOsk8pH1AgcZDAyRszlwDjCNoDd9gcAkin1pxKWMSovDWMU0yyNGY5MCMYzGo04HbuQcZ2HnS54ouw/I76AR4NHh2klkxno6sfWkYzjwKOxYGSchGTgnDQV/ym2hnIzjJ0hc7ge6dXh1HbbtvVn9j7Il/JFDO8sRtQ7FhpUya4+y52wHI333I371UryYPHIi8IKFhhWEb6kOWOQdGT3Ud+y4qzexDhlwl5NI8MiIICup1ZRqaSMgDIGThGO386LUmPxKxtVFFFXNkKKKKAKKKKAKKKKAKKKKAKK8Jqq8d56tocrH9c4/VOEB+Lef3Z+6qTnGCvJmWlRnVluwV2Wum91exRjMkiIPV2C/iayDi3Ol7NkdXpr+rF4f8Ai97+NV2SYk5O5PmdzWtLFr9KOvS2LN51JW6szbJucOHr3uUP9XU3/KDSI554d/p//Tl/7axYua5JPrVPxU+SNpbFo8ZPu8jdIObLBu11GP6x0f8ANipaGdHGUYMPVSCP4V866j60pb3LodSMyH1QlT+8VZYp8UYp7Ej+ifaj6KorHOE8/wB7FgOwmX0kHi+5hv8AvzV74Fz1aXGFY9GQ/ZfGCf8AVbsfvwfhWeFeEjm19m16ObV1zXq5aKKKKzGgFFFFAFFFJzzoilnYKo7sxAAztuT8aAUopK2uY5BqjdXXtlSGGR8RXEN9C50pIjN49gwJ+rbQ+w/Vfwn0O1AOKKKKAKKKKAKKKKAyHmnm+a5JRMpD20g7t/XPn/VG3zqrkE0uy7mpe24EZIhIr7kA4IXTksU0A6tWvYHGnGGG/bPE3p1JX1Z7aKo4aCSyRAdOjp1Y4+WmB8ci4J0jSd8iRY/Mdt2P3UxvuEmNOp1FZcoOxDEuiybD0wTvn7JqXCaV2THFUpOyZE9OvNFTx4EGJ6Uo0gxA6xhsyhW7Lq2AcDPmVb0pG94I0aM+tW0AFgAe5keMhT2bBT18+1TuTQWKpNpX9MhtNeaam5+Asqsxlj8K5wC2W8MjeHw7jEbYPY7YO9Q9Q01qZIVYz+FiemjTSle4qLlyf5c5xubXCk9WL9RjuB/qH7Py3Hy71qvAuO292muFs495Ts6n0Yfz7GsK00vY3csMglhco69iPT0I7EfA1sUsS45PQ5mM2ZTre9DKXc+vzPoGiqxyhzdHdjQ+EnA3TyYD7Seo+HcfHvVnroxkpK6PMVaU6UnCaswqG5v4S91atAjBWaSBtRxsI545GIyrAtpQ4BBGcZ2pLnOCV4FEbTL9YpbohySozkN05I5Ap23jbOcbEZFQ8NzxMGACOVPBa/VnTKran03HXlbxhkj8QOVyf1zlRYxi3EuXbxQiW0odTGyO8riJwTKkgcLDEEY6Qy9l2xud6a3XLtzGksgOWAvHj6ZYv1Jb76XDsAMrsoYZ9RuKV4YvEUNvGOoI5C2tiqHoiKeSRtWoaj1kZIx306cjFN7G74yY3M4ZMtDqMaq8seWfrdEGIK6AdLGeqRljltgALZy/ayR26LKcynLyblh1JCXcKT9kMxA9AAKkag+TI5ltQJw4kMtyTr2bDXErKSMkDwlTgbAYA2qcoAoopjxLikcJjVj4pZFjRfMljufkBv8A/dCUm3ZD6iiihBgT9z86kLaGzbQZJNPgIcKrltetsH3SuNBXt6UyLEE4JHfttUv+S3KIyz+8mo6iRg+HYYJOkat27DB+IHBppu9lc9rXkkld26vsxLpcOJBLuuWGQMkBemM90JJ15H4bb0nBPZq51KXj6SYTL/niYw/ppJAffcdu+wp4/Bn8RE/hGrTuSxKl9u+xxGT/AGhXDcGl1YFwoGSBl3/XVB2G+7jJGwwc1mtL9vrtNZVKWjm+1+WoiicOAGWZjhck61wSsoYDC9tXRPn2OM9ii8fDxjDStsPRd9EhP2D9oRL6DUTk4pSPhspkEfXUExiQEuwXBxtv2O/Y+lOk4MSN7rB8QO7FQVEmDnvgmP0qUpP9K9fMOcI6zfb/AER2myEc41EvrPRJDZ0AjGcYALDOcjbA232WK2JUHOkrGNQXV4n2XB1d8kljpGAEIycjHl9w+SNC/Xzp05UMxY5WMkjbGMyAfcfSnM/CcAabrUScAZOfdaVTsSTmPQcAe8+mpSfL12kucGr77zf0V+BwTwwsW1MO4CBXC40YyTpJzqOf7PY036XDv9NJ57YPkZMH3NwfqvQ+9nHall4RJlg1yDpV2OlnJ26oHljBMR38tS+ZFJwcMlYKeqwDxK4ZmIXUZFQrtnOA2fWrZ/tXr5kJwX/I+3/Uh0YGvcVONwh1DE3IJAJXSXOcLK2nBwc/Vd/j51EpcuR7zfHc1rzg46m7TrKp8PruE0LKwZWKspyrDYgjzFatyVzYLpelLhZ1G/kJAPtL8fUfy7ZXpqzcn8syTss5cxRRtkSDZiV76SdgO4JO3ceuMuFqSU7LM09p0aM6LlUdmtH9DWqKz3j/ALTY1d7fh0JvJlVW1oUNqmo4+tkDYXA+QyQMjyjJ+J8yzFtD2luHUaF0SyOmBklW6ZR/+IDy9a655I1Wisq/pTzDbgvLb210hACiEyQnV6r1VHVJ/VTJzjFXDlLna0vy6Ra0li09SKRSjqWztg98EEH5fEUBZaKK5kcKCSQAASSdgAO5PpQCN/eRwxtJIwVEGST6fzPwrIoeOvecUt5W2USoI0/VTV+J7k/yArznzms3b9OIkQIdvLqMPtn4eg+/z2ieUv022/ap+NadSrvSSWlz0WEwPsaE6k/icX8lbxN8ooorcPOmDE4J7efcA/jUonCCwUrJFuEOGUZ3SNjjCnODKAB3OKimG5qWSOyMahmKttnCyas6G1FzurAyacBQCB388cCnZ3v42Pa4iTVmr/JXOjwNyAVePGwbUqjDF1TGNOd9WQO/gak73hBj0nXGVZ0T3V1AsoJyNO2MnY74xXpt7AEeOQjBOCDucjC7J5jVvn0+VDRWBPvOBnHhDe71DuMpudB88dh3ORWa0bcO01lOaed/4HUXAJSW1MiBXZRlF1HCllIGN8+Ef2vOvIuAuWAaWIA9LJCqfzrFRjwgNuB2O+fnTZorMGMqXxrTqKwJwmFLfYGcHUNu9eLHZh0xqK6W1awxXqafCTpAbTq7gZO3nUpR5d5N6jzu9P2/2e2nDS6BgRqL6PzcelTlQOoThgTq2AB7fPCjcDcEAywAnSMFRtqcoMnRjurH7viM8X62hVekAD1DkkS/myW757KBpGBlj8D36RLEyTatkKARFVlxr07sAfEPEPdbI8Xc43lJafUlzm88/wCPSj1uCMAcyxZAc4EYLZUSkDBUd+iw9RtSdvwtTGsjyIMiRmULEWVVjkdCRjPi6bDcfaXGc4pnKIeggCjq6jqwGzp8gc+HbbtnOfLG7PR8KjeS4d5ljCck/etnyXT9ywvy6Sx0yR6NZjUlUB1BtGT4fdyG+OAO+c1APKQSAVIBIyEUAj1HhBGaTKfD+FeFT6VDknojJTpyj8Ur/KxN8vcMN1OkQ2DHLH0Ubt9/l8yKnOfeKyyzpwexLxAKPpLqq4EDroWNC32mLKu2N2GTjUQt7LUVBczt9kKo7fFm7+uE/dTf2e2bLJc3VwG6k88kgBYTSBPdhVumW91GlGO2HHpW9hKSjC/M87teu51tzhHxF+D2KWqRx2sQUKvVXZcMVPfUx3VlDq0pxIpK5ARggH4vDaMvVvk1DWVD9PKiQjUFMsqMyHSGB0kZLYOnSFkuZLYtG30fFuXyWmaNUOonOoiVo9RGWIyfebV3XfNR7N+GifpXPEDJcMcsglVZixGs5RY5SSRk41ZOfjW2cov/AAxYHiJtXR3MMUEZQoBlFZGZ2VmSQ6TqKamOIxttSXOvJqSaLqMhbmAhkkGFwyHUobY5iyAMH3RuMDUDVeEfkKy6U8TSiOd2iE2i4VMrjPULyBcAkHJQ4K5GCu0zxvn5oI4pXglaOQzB9c8UboIJ1gkAWJPGQXG2rffyGaAuXs85oN9bZkwtzESlxHpZdEgLDsfUDyJ3yPKqTz1zm1yTBASsAPiPZpCPUdwvw8/P0qc4RxpfyjNDcdDoIsDWznXJI/0hlWNtTu2PEyrsBknOdqpXOdoIr64QDA16h/eKJPxY1r4htRyOtsenTnWe8s0rohaluUv022/ap+NRNS3KX6bbftU/GtOPxI9HiPyp9T8DfKKKK6h4YwckgnBx3qT/ACW/TWTrKPCWcFt0GxQEKScsu4yB2qMfvT4raiMkZaQoMA5wrkx5PugZ3l8yMKDkE4HnoWzv4ntq29lu+F/sPG4I4cL1vDrCk+LODK8YbGPCMJnJONxgnNR11ZSJpBkB1R9Twlm2xnHb+Pb4066ViQmXcEJhsAjLkp4hkN4QGk2wvuL65PLQWOlj1JCwGVAGxbTnBJUY8QI/tD0NZmo8LdprwnNPO7/xFE4M7KpSdSSEJBL5XUkbb4B7GTyyAFJOMEBCThciiJmmXTKyKCrEka98kegGP3iuL6O0XBiLyYcZDbAoADg+EHJORsdv404vBw/B6evsd9wSy9u4OAxbtjbp+Wam0c/MKVRW1z/6iM3CZVZB1R45NA3cYOSMnI+G+M42B3pX8gzEErMjAKDkM/nvjBXOcb9vh3rqWPhxY7sFyPd1ZxqcHuhA20HG/wCNN54bREBGJGaNtixyrYj0nwgBTqaQ6Wzsg7E1bdivuQqlR2Waf/n+xWXgMwBPWXKq5YZb7DYwPXbB8sZGe9JQ8MJaUGfHSYqxGsrskrau2cBotPbfO3lmIK1yRVd+PLvNn2VSzTn3Il7jg06NGplUmR2QaXYgFWKknYbbfOvL7hMkaOWmBZMeFS5yDI8WScADdP4jOMjMRgV5ppvR5d5Kp1Mve7unyyL57O3b6LeCNFeVPHGrDOXMbBf4rj76p8HFr65hZEubqZmspnuEGoSQXcbsEVRGqsmpgFEfmCSQe9S/IXEujdBSxRZh0ywxs2codwR38Pb7VTXNPGZ7O/ijmVjZzKqpMzyAdck/Vv8AWaFBVSAdIAJBPhDV0sLK9NdB5ratNwxDfPMpE3Ld69pOv0R9c30OeJpCI4o5IwFmRlnk1I+7ktnxjGyjAqxWvBLxJJGilhEct4l4zBmkkQnd4XVInDYOQHVhjv54q+NbWxjMihYwASZFARl051atsjGCCDuMHsayjj/s8S6fWt/LjJ8ErdQg6S2wnlRkGkMcZfYZ1HFbBzR+vD7OKP6Pc30Lxm4ll6QWFWxMpRogJJeoPeOGVdQJqe4TyFbiGOMdSSNFnjHUnZTpmY9UFUiXOSO+r7I+dV3lzkWysXDtIbifYqoZQQc6AQASsRDMBrLuRnICncXm55jW3szLMBDoXYjGkINldFO48lCEDx+HcZagIDg9jw4cRjskt4+rHF1FlMZdkELlFVWleTcadQOBtj5VB8/yauIT7506FztklY0BzjbvmrD7NIWihuuL3WpPpAGmJlIaOKDUkagndsrpA2GcA75qh3ly0sjyP7zszH5sST929auJlkkdvYlNucqnBK3b9hGpblL9Ntv2qfjUTUtyl+m237VPxrVj8SO9iPyp9T8DfKKKK6h4Ywhu5rk1243rmvM3PfI5ryuiK5qQeEVzXdcmroHNeEV1XlSDivCK6IrypBzXldGuasDwitB4JxS14jALO/UM49xmJGogEBlYYKyAE9jk9x5gZ/XJFZqVV03dGri8JDEw3Za8HyLXDw3i/DCIpP8Axtn02zKAA0aKCNEiEnqrpA+ONgwAxTD+m/BnCtIGhbTkAi4jOlkZdlWORQMM2MMcZOKd8G56vIAFYiZB5PnUPkw3/eDU4faBZv4pbMltJXI6b+E91y2DpPpXQjiab42POVdlYiDyV+ohrfmK0IzaQNLKVcoAksjPmNQxTVGAnh0KW6bLuB54KvDOTbq9cXXGWVLdQJI7ZXcFX76rgsBlgu3fbOBpA01IS+0aJFC29mFCjChiqKo9AEB2+AIqncwcx3V0cTSeDuI18KZ+XdvvJpLEwWmZejsmvN+/7qJfn3m36U3Rh/MIc57dRh2OP1R5evf0qn0UVpyk5O7PS0KEKMFCGgVLcpfptt+1T8aialuUv022/ap+NI/EhiPyp9T8DfKKKK6h4Ywtu5rg17RXmD3yOTXJFFFWQPK8ooqQeEV5RRVgeVyaKKsDyuaKKlA8oooqwOTXlFFSgeUnKKKKsgJUUUVkAVLcpfptt+1T8aKKtH4kYsR+VPqfgb5RRRXUPDH/2Q" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">Rs 345.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">mock test by sukun proffesor</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #COLLECTION
+      -->
+
+      <section class="section collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+
+          <ul class="collection-list">
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">School Books</h2>
+
+                <p class="card-text">Books of latest addition</p>
+
+                <a href="/productlisting/school/school.html" class="btn-link">
+                  <span class="span">Shop Now</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-1.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">College Books</h2>
+
+                <p class="card-text">download free book pdf or you can buy as given by our sellers</p>
+
+                <a href="/productlisting/college/college.html" class="btn-link">
+                  <span class="span">Discover Now</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-2.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Competetion books</h2>
+
+                <p class="card-text">Starting at Rs 199</p>
+
+                <a href="/productlisting/competetive/competetive.html" class="btn-link">
+                  <span class="span">Discover Now</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-3.jpg')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SHOP
+      -->
+
+      <section class="section shop" id="shop" aria-label="shop" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Refurbished Books</h2>
+
+            <a href="/productlisting/Refurbished/refurbished.html" class="btn-link">
+              <span class="span">Shop All material</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-01.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+
+                  <span class="badge" aria-label="50% off">-50%</span>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <del class="del">Rs 299.00</del>
+
+                    <span class="span">Rs 149.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">PCM secondhand book </a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">517 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-02.jpg" width="540" height="720" loading="lazy"
+                    alt="Bio-shroom Rejuvenating Serum" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">Rs 199.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">Class 10 social science</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">217 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-03.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">Rs 129.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">Together with-ICSE Physics question bank</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">498 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-04.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">Rs 1999.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">UPSE combo books</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-05.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+
+                  <span class="badge" aria-label="20% off">-20%</span>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <del class="del">Rs 650</del>
+
+                    <span class="span">Rs 520</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">Mathematics R.S agarwal</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">2081 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-06.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">Rs 199.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">NCERT Secondhand Class 10 combo</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline  ]" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">517 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section shop" id="shop" aria-label="shop" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Refurbished short notes and cheatsheets</h2>
+
+            <a href="/productlisting/Refurbished/refurbished.html" class="btn-link">
+              <span class="span">Shop All Material</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-07.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+
+                  <span class="badge" aria-label="20% off">-30%</span>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <del class="del">Rs 99.00</del>
+
+                    <span class="span">Rs 49.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">Class 12 Pythics cheatsheets</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">1101 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-08.jpg" width="540" height="720" loading="lazy"
+                    alt="Bio-shroom Rejuvenating Serum" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">Rs 219.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">Class 12 Organic chem shortnotes</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">5170 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-09.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">Rs 79.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">Chemistry cheatsheets</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">170 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-10.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">Rs 99.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">Math formula Sheet</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">517 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-11.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+
+                  <span class="badge" aria-label="20% off">-50%</span>
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <del class="del">Rs 99.00</del>
+
+                    <span class="span">Rs 49.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">Biology cheatsheets</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">8170 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-01.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+
+                  <div class="card-actions">
+
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">Rs 149.00</span>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">PCM Short notes</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">3170 reviews</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BANNER
+      -->
+
+      <section class="section banner" aria-label="banner" data-section>
+        <div class="container">
+
+          <ul class="banner-list">
+
+            <li>
+              <div class="banner-card banner-card-1 has-before hover:shine">
+
+                <p class="card-subtitle">New Collection</p>
+
+                <h2 class="h2 card-title">Discover Our Exam Takle Material</h2>
+
+                <a href="/productlisting/examtackle/examtackle.html" class="btn btn-secondary">Explore More</a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/banner-1.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="banner-card banner-card-2 has-before hover:shine">
+
+                <h2 class="h2 card-title">25% off Everything</h2>
+
+                <p class="card-text">
+                  Checkout amzing electronics gadgets which make your study easy.
+                </p>
+
+                <a href="/productlisting/electronics/electronics.html" class="btn btn-secondary">Check Now</a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/banner-2.jpg')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-label="feature" data-section>
+        <div class="container">
+
+          <h2 class="h2-large section-title">Why Shop with Sukun?</h2>
+
+          <ul class="flex-list">
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-1.png" width="204" height="236" loading="lazy" alt="Guaranteed PURE"
+                  class="card-icon">
+
+                <h3 class="h3 card-title">Guaranteed Notes</h3>
+
+                <p class="card-text">
+                  All types of notes , short notes , cheatsheet which make your speed of study more faster and simple
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-2.jpg" width="204" height="236" loading="lazy"
+                  alt="Completely Cruelty-Free" class="card-icon">
+
+                <h3 class="h3 card-title">Safety assured products</h3>
+
+                <p class="card-text">
+                  All the products are made by seller are checked for your safety concern . so that 
+                  electronics product will be safe and help in your studies
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-3.jpg" width="204" height="236" loading="lazy"
+                  alt="Ingredient Sourcing" class="card-icon">
+
+                <h3 class="h3 card-title">Flexibility Sourcing</h3>
+
+                <p class="card-text">
+                  Our platform has both option as per the will of seller materials can be buy and get in both offline or online
+                  ways . Also you can sell your old notes to help other also it is better to sell rather than throwing trash  
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #OFFER
+      -->
+
+      <!-- <section class="section offer" id="offer" aria-label="offer" data-section>
+        <div class="container">
+
+          <figure class="offer-banner">
+            <img src="/assets/images/product-15.jpg" width="305" height="408" loading="lazy" alt="offer products"
+              class="w-100">
+
+            <img src="/assets/images/product-17.jpg" width="450" height="625" loading="lazy" alt="offer products"
+              class="w-100">
+          </figure>
+
+          <div class="offer-content">
+
+            <p class="offer-subtitle">
+              <span class="span">Exam Offer</span>
+
+              <span class="badge" aria-label="20% off">-70%</span>
+            </p>
+
+            <h2 class="h2-large section-title">Exam Tackle Materials</h2>
+
+            <p class="section-text">
+              Check our the biggest discount on mock test papers , sample papers and previous year paper to make a high 
+              jump in last prepartion made by company and experience students which make it easy for you
+            </p>
+
+            <div class="countdown">
+
+              <span class="time" aria-label="days">05</span>
+              <span class="time" aria-label="hours">21</span>
+              <span class="time" aria-label="minutes">46</span>
+              <span class="time" aria-label="seconds">08</span>
+
+            </div>
+
+            <a href="/productlisting/examtackle/examtackle.html" class="btn btn-primary">Get Only Rs 49.00</a>
+
+          </div>
+
+        </div>
+      </section> -->
+      <body>
+
+        <!-- Offer Section -->
+        <section class="section offer" id="offer" aria-label="offer" data-section>
+          <div class="container">
+      
+            <!-- Product Images -->
+            <figure class="offer-banner">
+              <img src="/assets/images/product-15.jpg" width="305" height="408" loading="lazy" alt="Offer product 1" class="w-100">
+              <img src="/assets/images/product-17.jpg" width="450" height="625" loading="lazy" alt="Offer product 2" class="w-100">
+            </figure>
+      
+            <!-- Offer Content -->
+            <div class="offer-content">
+      
+              <p class="offer-subtitle">
+                <span class="span">Exam Offer</span>
+                <span class="badge" aria-label="70% off">-70%</span>
+              </p>
+      
+              <h2 class="h2-large section-title">Exam Tackle Materials</h2>
+      
+              <p class="section-text">
+                Check out the biggest discount on mock test papers, sample papers, and previous year papers to help you prepare. 
+                These materials are created by experienced students and companies to make learning easier for you.
+              </p>
+      
+              <div class="countdown">
+                <span class="time" aria-label="days">05</span> 
+                <span class="time" aria-label="hours">21</span>
+                <span class="time" aria-label="minutes">46</span>
+                <span class="time" aria-label="seconds">08</span>
+              </div>
+      
+              <a href="/productlisting/examtackle/examtackle.html" class="btn btn-primary">Get Only Rs 49.00</a>
+      
+            </div>
+      
+          </div>
+        </section>
+      
+    <!-- electronics -->
+
+    <section class="section electronics" id="electronics" aria-label="electronics" data-section>
+      <div class="container">
+
+        <div class="title-wrapper">
+          <h2 class="h2 section-title">Electronics Products</h2>
+
+          <a href="/productlisting/electronics/electronics.html" class="btn-link">
+            <span class="span">Shop All material</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+        </div>
+
+        <ul class="has-scrollbar">
+
+          <li class="scrollbar-item">
+            <div class="electronics-card">
+
+              <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1XKRh2tUnTuUCTjZJ7ZRJ6AoawjtpFf9O2g&s" width="540" height="720" loading="lazy"
+                  alt="Facial cleanser" class="img-cover">
+
+                <span class="badge" aria-label="50% off">-50%</span>
+
+                <div class="card-actions">
+
+                  <button class="action-btn" aria-label="add to cart">
+                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                  <button class="action-btn" aria-label="add to whishlist">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                  <button class="action-btn" aria-label="compare">
+                    <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+              </div>
+
+              <div class="card-content">
+
+                <div class="price">
+                  <del class="del">Rs 299.00</del>
+
+                  <span class="span">Rs 149.00</span>
+                </div>
+
+                <h3>
+                  <a href="#" class="card-title" >Digital ruffpad </a>
+                </h3>
+
+                <div class="card-rating">
+
+                  <div class="rating-wrapper" aria-label="5 start rating">
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <p class="rating-text">517 reviews</p>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="electronics-card">
+
+              <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4BGd5sU9FjoT9NJkZmqvpQbxNEkuhQsNvAw&s" width="540" height="720" loading="lazy"
+                  alt="Bio-shroom Rejuvenating Serum" class="img-cover">
+
+                <div class="card-actions">
+
+                  <button class="action-btn" aria-label="add to cart">
+                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                  <button class="action-btn" aria-label="add to whishlist">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                  <button class="action-btn" aria-label="compare">
+                    <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+              </div>
+
+              <div class="card-content">
+
+                <div class="price">
+                  <span class="span">Rs 899.00</span>
+                </div>
+
+                <h3>
+                  <a href="#" class="card-title">Boat earbuds</a>
+                </h3>
+
+                <div class="card-rating">
+
+                  <div class="rating-wrapper" aria-label="5 start rating">
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <p class="rating-text">217 reviews</p>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="electronics-card">
+
+              <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                <img src="https://www.boat-lifestyle.com/cdn/shop/files/Mainimage_86d113ab-e793-4b6b-9de8-0b82d4f83a8e_500x.png?v=1694000204" width="540" height="720" loading="lazy"
+                  alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+
+                <div class="card-actions">
+
+                  <button class="action-btn" aria-label="add to cart">
+                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                  <button class="action-btn" aria-label="add to whishlist">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                  <button class="action-btn" aria-label="compare">
+                    <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+              </div>
+
+              <div class="card-content">
+
+                <div class="price">
+                  <span class="span">Rs 1200.00</span>
+                </div>
+
+                <h3>
+                  <a href="#" class="card-title">Boat speaker</a>
+                </h3>
+
+                <div class="card-rating">
+
+                  <div class="rating-wrapper" aria-label="5 start rating">
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <p class="rating-text">5170 reviews</p>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="electronics-card">
+
+              <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROJ2hAStVPiihO-VKaXLxpiXQxeoTKg-Pe5w&s" width="540" height="720" loading="lazy"
+                  alt="Facial cleanser" class="img-cover">
+
+                <div class="card-actions">
+
+                  <button class="action-btn" aria-label="add to cart">
+                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                  <button class="action-btn" aria-label="add to whishlist">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                  <button class="action-btn" aria-label="compare">
+                    <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+              </div>
+
+              <div class="card-content">
+
+                <div class="price">
+                  <span class="span">Rs 600.00</span>
+                </div>
+
+                <h3>
+                  <a href="#" class="card-title">Multiple OTG connector</a>
+                </h3>
+
+                <div class="card-rating">
+
+                  <div class="rating-wrapper" aria-label="5 start rating">
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <p class="rating-text">5170 reviews</p>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="electronics-card">
+
+              <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                <img src="https://media.croma.com/image/upload/v1675869615/Croma%20Assets/Entertainment/Speakers%20and%20Media%20Players/Images/246234_3_ewxwau.png" width="540" height="720" loading="lazy"
+                  alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+
+                <span class="badge" aria-label="20% off">-20%</span>
+
+                <div class="card-actions">
+
+                  <button class="action-btn" aria-label="add to cart">
+                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                  <button class="action-btn" aria-label="add to whishlist">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                  <button class="action-btn" aria-label="compare">
+                    <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+              </div>
+
+              <div class="card-content">
+
+                <div class="price">
+                  <del class="del">Rs 799.00</del>
+
+                  <span class="span"> Rs 999.00</span>
+                </div>
+
+                <h3>
+                  <a href="#" class="card-title">Boat loudbuffer</a>
+                </h3>
+
+                <div class="card-rating">
+
+                  <div class="rating-wrapper" aria-label="5 start rating">
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <p class="rating-text">5170 reviews</p>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="electronics-card">
+
+              <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/keyboard/gaming-keyboard/t/v/c/gaming-keyboard-and-mouse-combo-keyboard-87-keys-backlit-3200-original-imagz84zxmchzfzt.jpeg?q=90&crop=false" width="540" height="720" loading="lazy"
+                  alt="Facial cleanser" class="img-cover">
+
+                <div class="card-actions">
+
+                  <button class="action-btn" aria-label="add to cart">
+                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                  <button class="action-btn" aria-label="add to whishlist">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                  <button class="action-btn" aria-label="compare">
+                    <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                  </button>
+
+                </div>
+              </div>
+
+              <div class="card-content">
+
+                <div class="price">
+                  <span class="span">Rs 1499.00</span>
+                </div>
+
+                <h3>
+                  <a href="#" class="card-title">ASUS keyboard and mouse</a>
+                </h3>
+
+                <div class="card-rating">
+
+                  <div class="rating-wrapper" aria-label="5 start rating">
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <p class="rating-text">5170 reviews</p>
+
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog" data-section>
+        <div class="container">
+
+          <h2 class="h2-large section-title">Exam Tackle Collection</h2>
+
+          <ul class="flex-list">
+
+            <li class="flex-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
+                  <img src="./assets/images/blog-1.jpg" width="700" height="450" loading="lazy" alt="Find a Store"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="/productlisting/examtackle/examtackle.html" class="card-title">Mock Test Paper</a>
+                </h3>
+
+                <a href="/productlisting/examtackle/examtackle.html" class="btn-link">
+                  <span class="span">Check Out</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
+                  <img src="./assets/images/blog-2.jpg" width="700" height="450" loading="lazy" alt="From Our Blog"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="/productlisting/examtackle/examtackle.html" class="card-title">Sample Papers </a>
+                </h3>
+
+                <a href="/productlisting/examtackle/examtackle.html" class="btn-link">
+                  <span class="span">Check Out</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
+                  <img src="./assets/images/blog-3.jpg" width="700" height="450" loading="lazy" alt="Our Story"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="/productlisting/examtackle/examtackle.html" class="card-title">Previous year question with solution</a>
+                </h3>
+
+                <a href="/productlisting/examtackle/examtackle.html" class="btn-link">
+                  <span class="span">Check Out</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" data-section>
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">TEAM SUKUN</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">
+              Find a location nearest you. See <a href="#" class="link">Our Stores</a>
+            </p>
+          </li>
+
+          <li>
+            <p class="footer-list-text bold">+91 92568 43593</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">hello@domain.com</p>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful links</p>
+          </li>
+
+          <li>
+            <a href="#offer" class="footer-link">offers</a>
+          </li>
+
+          <li>
+            <a href="/404.html" class="footer-link">Best Sellers</a>
+          </li>
+
+          <li>
+            <a href="/productlisting/Refurbished/refurbished.html" class="footer-link">Bundle & Save</a>
+          </li>
+
+          <li>
+            <a href="/freepdf/freepdf.html" class="footer-link"><strong>Free Pdf Materials</strong></a>
+          </li>
+          
+          <li>
+            <a href="/books-donationorsell/books-donation.html" class="footer-link"><strong>Donate/Sell Books</strong></a>
+          </li>
+          
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">FAQ</p>
+          </li>
+
+          <li>
+            <a href="/footerterm/Cancellation_and_Returns/index.html" class="footer-link">Canncellation & Return</a>
+          </li>
+
+          <li>
+            <a href="contactus.html" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="/footerterm/helpcentre/index.html" class="footer-link">Shipping FAQ</a>
+          </li>
+
+          <li>
+            <a href="/footerterm/TermsOfUse.html" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="/footerterm/privacypolicy/index.html" class="footer-link">Privacy Policy</a>
+          </li>
+          
+          <li>
+            <a href="/footerterm/Payments/index.html" class="footer-link">Payment Policy</a>
+          </li>
+
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="newsletter-title">Get Updates.</p>
+
+          <p class="newsletter-text">
+            Enter your email below to be the first to know about new collections and product launches.
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email address" required
+              class="email-field">
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="wrapper">
+          <p class="copyright">
+            TeamSukun
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://x.com/Saurya11253v" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/saurya11253v?igsh=MWxyZWFwaXppOXkzZg==" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://youtube.com/@skgamerandentertainment?si=3sVCctvdQFOAdreL" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+            
+            
+            <li>
+              <a href="https://github.com/TeamSukun" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            
+            
+            <li>
+              <a href="https://t.me/cute_billa_hu" class="social-link">
+                <ion-icon name="logo-telegram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" loading="lazy" alt="SukunStore">
+        </a>
+
+        <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
